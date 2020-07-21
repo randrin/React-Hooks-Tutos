@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
+import { FaPlusCircle } from "react-icons/fa";
 
 export default class ClassComponent1 extends Component {
   constructor(props) {
@@ -20,9 +21,10 @@ export default class ClassComponent1 extends Component {
   render() {
     return (
       <div className="my-5">
-        <h3>Class Component Tutto1</h3>
+        <h3>Class Component Counter</h3>
         <Button className="btn btn-danger" onClick={this.incrementCounter}>
-          Increment the counter {this.state.counter}
+          <FaPlusCircle className="mb-1" />
+          <span className="ml-2">Increment the counter {this.state.counter}</span>
         </Button>
       </div>
     );

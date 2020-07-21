@@ -41,7 +41,32 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-tuto-info {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.App-hr {
+  border-top: 1px solid white;
+}
+
+.App-todo-list {
+  color: black;
+  text-align: left;
+}
+
+.App-todo-button-left {
+  float: left;
+}
+
+.App-todo-new {
+  float: right;
+  right: 20px;
+  position: absolute;
 }
