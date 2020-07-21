@@ -56,7 +56,7 @@ export default class ClassComponent2 extends Component {
     });
   }
   render() {
-    const { todos, title, emptyTodo, isNew } = this.state;
+    const { todos, title, emptyTodo } = this.state;
     return (
       <div className="my-5">
         <h3>

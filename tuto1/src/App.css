@@ -7,6 +7,15 @@ body {
   color: white !important;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: #63666a;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 .App {
   text-align: center;
 }
@@ -59,6 +68,10 @@ body {
 .App-todo-list {
   color: black;
   text-align: left;
+}
+
+.App-keyboard {
+  color: black;
 }
 
 .App-todo-button-left {
