@@ -71,7 +71,7 @@ export default class ClassComponent2 extends Component {
               <li key={todo.id} className="App-todo-list list-group-item">
                 <span>{todo.title}</span>
                 <span className="App-todo-new">
-                  {isNew && (
+                  {todo.isNew && (
                     <h6>
                       <span className="badge badge-success">New</span>
                     </h6>

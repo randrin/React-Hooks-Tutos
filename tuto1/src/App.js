@@ -8,7 +8,7 @@ import FunctionComponent2 from "./components/FunctionComponent2";
 function App() {
   return (
     <div className="App my-5">
-      <h1>React Hooks Tuto 1</h1>
+      <h1 className="mb-4">React Hooks Tuto 1</h1>
       <div className="container">
         <p className="App-tuto-info bg-info">
           Two different modes (One with class component, another one with
