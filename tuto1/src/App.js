@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import ClassComponent1 from "./components/ClassComponent1";
-import ClassComponent2 from "./components/ClassComponent2";
-import ClassComponent3 from "./components/ClassComponent3";
-import FunctionComponent1 from "./components/FunctionComponent1";
-import FunctionComponent2 from "./components/FunctionComponent2";
+import ClassComponent1 from "./components/class/ClassComponent1";
+import ClassComponent2 from "./components/class/ClassComponent2";
+import ClassComponent3 from "./components/class/ClassComponent3";
+import FunctionComponent1 from "./components/function/FunctionComponent1";
+import FunctionComponent2 from "./components/function/FunctionComponent2";
+import FunctionComponent3 from "./components/function/FunctionComponent3";
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
             <ClassComponent3 />
           </div>
           <div className="col-md-6">
-            <FunctionComponent2 />
+            <FunctionComponent3 />
           </div>
         </div>
         {/* <hr className="App-hr" /> */}

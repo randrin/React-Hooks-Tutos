@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
-import { FaRegEyeSlash, FaRegEye } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 export default class ClassComponent3 extends Component {
   constructor(props) {
@@ -15,17 +15,20 @@ export default class ClassComponent3 extends Component {
   handleShow() {
     this.setState({
       show: !this.state.show,
+      keyPress: null,
     });
   }
+
   handleKeyUp = (e) => {
-    console.log("handleKeyUp");
     this.setState({
       keyPress: e.code,
     });
   };
+
   componentDidMount() {
     document.addEventListener("keyup", this.handleKeyUp);
   }
+
   render() {
     const { keyPress, show } = this.state;
     return (
@@ -33,8 +36,10 @@ export default class ClassComponent3 extends Component {
         <div className="row">
           <div className="col-md-12 my-3">
             <Button onClick={() => this.handleShow()}>
-              <FaRegEye className="mb-1" />
-              <span className="ml-2">{show ? "Show" : "Hide"}</span>
+              <FaChevronRight className="mb-1" />
+              <span className="ml-2">
+                {show ? "Finish the test" : "Start the test"}
+              </span>
             </Button>
           </div>
           {show && (
